@@ -1,0 +1,90 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "../vendor/shadcn-tailwind-4.13.0.css";
+
+:root {
+  --background: #f7f8f6;
+  --foreground: #18343b;
+  --card: #ffffff;
+  --card-foreground: #18343b;
+  --popover: #ffffff;
+  --popover-foreground: #18343b;
+  --primary: #18343b;
+  --primary-foreground: #ffffff;
+  --secondary: #e8efec;
+  --secondary-foreground: #18343b;
+  --muted: #eef2f0;
+  --muted-foreground: #60777d;
+  --accent: #9fc4c0;
+  --accent-foreground: #18343b;
+  --destructive: #c44343;
+  --border: #d6dfdc;
+  --input: #d6dfdc;
+  --ring: #6f9291;
+  --radius: 0.15rem;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: 0.1rem;
+  --radius-md: 0.15rem;
+  --radius-lg: 0.2rem;
+  --radius-xl: 0.3rem;
+  --font-sans: "Avenir Next", Avenir, "Segoe UI", Helvetica, Arial, sans-serif;
+  --font-display: Georgia, "Times New Roman", serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+}
+
+* { border-color: var(--border); }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  text-rendering: optimizeLegibility;
+}
+
+::selection { background: #9fc4c0; color: #102c33; }
+.font-display { font-family: var(--font-display); }
+.section-label {
+  color: #6f9291;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+.section-title {
+  max-width: 760px;
+  font-family: var(--font-display);
+  font-size: clamp(2.75rem, 5vw, 4.75rem);
+  font-weight: 500;
+  letter-spacing: -0.035em;
+  line-height: 1.06;
+}
+
+.scrollbar-thin { scrollbar-width: thin; }
+.scrollbar-none { scrollbar-width: none; }
+.scrollbar-gutter-stable { scrollbar-gutter: stable; }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { transition-duration: 0.01ms !important; }
+}
