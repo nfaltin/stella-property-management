@@ -59,7 +59,7 @@ export default function TenantPage() {
             {tenantItems.map((item) => {
               const Icon = item.icon;
               return (
-                <article key={item.title} className="border-b border-r border-[#cdd8d4] bg-white p-8 sm:p-10 lg:p-12">
+                <article key={item.title} className="group border-b border-r border-[#cdd8d4] bg-white p-8 transition hover:bg-[#edf3f1] sm:p-10 lg:p-12">
                   <Icon className="text-[#6f9291]" size={30} strokeWidth={1.5} />
                   <h2 className="mt-9 font-display text-2xl font-medium tracking-tight sm:text-3xl">{item.title}</h2>
                   <p className="mt-5 max-w-xl leading-7 text-[#60777d]">{item.text}</p>
