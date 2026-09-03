@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ArrowRight, Building2, Handshake, MapPinned, Sparkles } from "lucide-react";
+import { ArrowRight, Building2, Handshake, Home as HomeIcon, MapPinned, Sparkles } from "lucide-react";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
@@ -28,6 +28,12 @@ const summaries = [
     title: "Arbetssätt",
     text: "Vi börjar med nuläge och mål, bygger en plan, driver genomförandet och följer upp det som skapar värde.",
     href: "/arbetssatt",
+  },
+  {
+    icon: HomeIcon,
+    title: "För hyresgäster",
+    text: "En praktisk väg in för dig som behöver felanmäla något i bostaden eller fastigheten.",
+    href: "/for-hyresgaster",
   },
 ];
 
