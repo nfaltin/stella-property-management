@@ -3,12 +3,13 @@ import { ArrowRight, Building2, Handshake, Home as HomeIcon, MapPinned, Sparkles
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
+import { services } from "@/lib/site-content";
 
 const summaries = [
   {
     icon: Building2,
     title: "Tjänster",
-    text: "Teknisk förvaltning, ekonomisk styrning, uthyrning och projektledning samlat i en tydlig leverans.",
+    text: "Tillsyn och fastighetsskötsel, teknisk och ekonomisk förvaltning, uthyrning samt projekt och entreprenad. Fem delar av ett samlat erbjudande.",
     href: "/tjanster",
   },
   {
@@ -54,7 +55,7 @@ export default function Home() {
               Hela fastigheten.<br /><span className="text-[#a5c8c5]">Ett samlat ansvar.</span>
             </h1>
             <p className="mt-8 max-w-2xl text-lg leading-8 text-white/75 sm:text-xl">
-              Stella hjälper fastighetsägare, investerare och bostadsrättsföreningar med rikstäckande förvaltning där teknik, ekonomi, uthyrning och projekt hänger ihop.
+              StellaPM hjälper fastighetsägare med allt från daglig tillsyn och skötsel till teknisk förvaltning, uthyrning och fastighetsbolagets redovisning.
             </p>
             <div className="mt-10 flex flex-wrap gap-4">
               <Link href="/kontakt" className="group inline-flex items-center gap-3 bg-[#9fc4c0] px-7 py-4 font-semibold text-[#18343b] transition hover:bg-white">
@@ -70,10 +71,31 @@ export default function Home() {
 
       <section className="border-b border-[#d9e0dd] bg-white">
         <div className="mx-auto grid max-w-[1400px] gap-8 px-6 py-12 lg:grid-cols-[1fr_2fr] lg:px-10">
-          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#6f9291]">Sammanfattning</p>
+          <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#6f9291]">En helhet som fungerar</p>
           <p className="max-w-4xl font-display text-2xl leading-snug text-[#2d4b52] sm:text-3xl">
-            En närvarande förvaltningspartner som gör komplexa fastighetsfrågor enklare att förstå, prioritera och agera på.
+            Vi tar hand om fastighetens dagliga funktion och dess långsiktiga tekniska och ekonomiska förvaltning. Tillsyn, skötsel, ekonomi, uthyrning och projekt samlas i ett tydligt ansvar.
           </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="services-heading" className="bg-[#e8efec] px-6 py-20 lg:px-10 lg:py-28">
+        <div className="mx-auto max-w-[1400px]">
+          <p className="section-label">Det här hjälper vi er med</p>
+          <h2 id="services-heading" className="section-title mt-5 max-w-3xl">Fem tjänsteområden. Ett samlat ansvar.</h2>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#60777d]">Anlita oss för den löpande skötseln, ett enskilt tjänsteområde eller ett samlat uppdrag. Vi anpassar omfattningen efter er fastighet och era behov.</p>
+          <div className="mt-12 grid auto-rows-fr gap-4 sm:grid-cols-2 xl:grid-cols-5">
+            {services.map((service) => {
+              const Icon = service.icon;
+              return (
+                <Link key={service.number} href={`/tjanster#tjanst-${service.number}`} className="group flex h-full flex-col bg-white p-7 transition hover:bg-[#f7f8f6]">
+                  <Icon className="text-[#6f9291]" size={28} strokeWidth={1.5} />
+                  <h3 className="mt-6 font-display text-2xl font-medium tracking-tight">{service.title}</h3>
+                  <p className="mt-4 text-sm leading-7 text-[#60777d]">{service.summary}</p>
+                  <span className="mt-auto inline-flex items-center gap-2 pt-6 text-sm font-semibold">Läs mer <ArrowRight size={16} className="transition group-hover:translate-x-1" /></span>
+                </Link>
+              );
+            })}
+          </div>
         </div>
       </section>
 
@@ -104,7 +126,7 @@ export default function Home() {
             <h2 className="section-title mt-5 text-white">Förvaltning där fastigheten finns.</h2>
           </div>
           <p className="text-xl leading-9 text-white/65">
-            Vi bygger upp rätt team, kontaktvägar och uppföljning runt varje uppdrag, med personlig närvaro och bred operativ kapacitet.
+            Vi bygger upp rätt team för drift, fastighetsskötsel och förvaltning där fastigheten finns. Med lokala samarbeten, tydliga kontaktvägar och löpande uppföljning håller vi ihop det praktiska arbetet och helheten.
           </p>
         </div>
       </section>

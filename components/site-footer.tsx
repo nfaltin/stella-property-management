@@ -22,7 +22,7 @@ export function SiteFooter() {
         <FooterBrand />
         <div className="text-xs leading-6 text-white/45 sm:text-right">
           <p>© {new Date().getFullYear()} Stella Property Management AB</p>
-          <p>Teknisk · Ekonomisk · Kommersiell förvaltning</p>
+          <p>Tillsyn & skötsel · Teknik · Ekonomi · Uthyrning · Projekt</p>
         </div>
       </div>
     </footer>

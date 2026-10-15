@@ -48,11 +48,11 @@ export default function AboutPage() {
           <div>
             <p className="section-label text-[#9fc4c0]">Om Stella</p>
             <h1 className="mt-6 max-w-4xl font-display text-5xl font-medium leading-[1.04] tracking-tight sm:text-6xl lg:text-[5rem]">
-              Erfaren rådgivning, uthyrning och förvaltning samlad i ett bolag.
+              Drift, skötsel och förvaltning med ett personligt ansvar.
             </h1>
           </div>
           <p className="max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
-            Stella Property Management är byggt för fastighetsägare, investerare och bostadsrättsföreningar som vill ha tydligt ansvar, nära dialog och en partner som kan hålla ihop både teknik, ekonomi och uthyrning.
+            Stella Property Management är byggt för fastighetsägare, investerare och bostadsrättsföreningar som vill ha tydligt ansvar, nära dialog och en partner som kan ta hand om både den dagliga skötseln, tekniken, ekonomin och uthyrningen.
           </p>
         </div>
       </section>
@@ -68,7 +68,7 @@ export default function AboutPage() {
               Bakom Stella finns ett entreprenöriellt driv och bred erfarenhet från fastighetsrådgivning, byggfrågor, teknisk förvaltning, hyresgästrelationer och uthyrning. Vi vet hur viktigt det är att någon håller ihop helheten.
             </p>
             <p>
-              Vår roll är att göra fastighetsägandet mer överblickbart. Det innebär att förstå nuläget, samla rätt kompetens, driva frågor framåt och ge beslutsunderlag som går att agera på.
+              Vår roll är att få fastigheten att fungera i vardagen och utvecklas över tid. Vi utför och samordnar drift och fastighetsskötsel, håller ordning på ekonomin och ger beslutsunderlag som går att agera på.
             </p>
           </div>
         </div>

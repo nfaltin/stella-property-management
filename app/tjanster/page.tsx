@@ -9,7 +9,7 @@ import { services } from "@/lib/site-content";
 export const metadata: Metadata = {
   title: "Tjänster | Stella Property Management",
   description:
-    "Teknisk förvaltning, ekonomisk styrning, uthyrning och projektledning för fastigheter i hela Sverige.",
+    "Tillsyn och fastighetsskötsel, teknisk förvaltning, ekonomisk förvaltning och redovisning, uthyrning samt projekt och entreprenad.",
 };
 
 export default function ServicesPage() {
@@ -22,32 +22,32 @@ export default function ServicesPage() {
           <div>
             <p className="section-label text-[#9fc4c0]">Tjänster</p>
             <h1 className="mt-6 max-w-4xl font-display text-5xl font-medium leading-[1.04] tracking-tight sm:text-6xl lg:text-[5rem]">
-              Förvaltning som hänger ihop.
+              Hela fastighetens behov. Fem tjänsteområden.
             </h1>
           </div>
           <p className="max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
-            Varje fastighet har sin egen logik. Därför anpassar vi omfattningen, men arbetar alltid med tydligt ansvar, aktiv uppföljning och affärsmässiga beslut.
+            Vi tar hand om både fastighetens dagliga funktion och dess långsiktiga tekniska och ekonomiska förvaltning. Våra fem tjänsteområden samverkar, och uppdragets omfattning anpassas efter era behov.
           </p>
         </div>
       </section>
 
       <section className="px-6 py-20 lg:px-10 lg:py-28">
         <div className="mx-auto max-w-[1400px]">
-          <div className="grid border-l border-t border-[#cdd8d4] md:grid-cols-2">
+          <div className="grid auto-rows-fr border-l border-t border-[#cdd8d4] md:grid-cols-2">
             {services.map((service) => {
               const Icon = service.icon;
               return (
-                <article key={service.title} className="group border-b border-r border-[#cdd8d4] bg-white p-8 transition hover:bg-[#edf3f1] sm:p-10 lg:p-12">
+                <article id={`tjanst-${service.number}`} key={service.title} className="scroll-mt-28 group flex h-full flex-col border-b border-r border-[#cdd8d4] bg-white p-8 transition hover:bg-[#edf3f1] sm:p-10 lg:p-12">
                   <div className="flex items-start justify-between">
                     <Icon className="text-[#6f9291]" strokeWidth={1.5} size={32} />
                     <span className="font-mono text-xs text-[#819396]">{service.number}</span>
                   </div>
                   <h2 className="mt-10 font-display text-2xl font-medium tracking-tight sm:text-3xl">{service.title}</h2>
-                  <p className="mt-5 max-w-xl leading-7 text-[#60777d]">{service.text}</p>
-                  <ul className="mt-8 space-y-3 border-t border-[#d6dfdc] pt-6">
+                  <p className="mb-8 mt-5 max-w-xl leading-7 text-[#60777d]">{service.text}</p>
+                  <ul className="mt-auto space-y-3 border-t border-[#d6dfdc] pt-6">
                     {service.items.map((item) => (
-                      <li key={item} className="flex items-center gap-3 text-sm font-medium">
-                        <Check size={15} className="text-[#6f9291]" /> {item}
+                      <li key={item} className="flex items-start gap-3 text-sm font-medium">
+                        <Check size={15} className="mt-0.5 shrink-0 text-[#6f9291]" /> {item}
                       </li>
                     ))}
                   </ul>
@@ -55,6 +55,13 @@ export default function ServicesPage() {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      <section className="border-t border-[#d6dfdc] bg-white px-6 py-16 lg:px-10">
+        <div className="mx-auto grid max-w-[1400px] gap-8 lg:grid-cols-2">
+          <h2 className="section-title">Från iakttagelse till långsiktig plan.</h2>
+          <p className="text-lg leading-8 text-[#60777d]">Den dagliga tillsynen fångar upp brister och löpande behov. Fastighetsskötseln hanterar mindre åtgärder, medan den tekniska förvaltningen planerar och samordnar större insatser. Ekonomisk uppföljning ger underlag för prioriteringar, och projektledningen håller ihop genomförandet när det behövs.</p>
         </div>
       </section>
 
