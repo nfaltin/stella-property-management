@@ -15,7 +15,7 @@ const summaries = [
   {
     icon: Sparkles,
     title: "Om oss",
-    text: "Ett entreprenöriellt förvaltningsbolag med erfarenhet från rådgivning, byggfrågor, uthyrning och fastighetsutveckling.",
+    text: "Lär känna Stella och hur vi förenar praktiskt arbete i fastigheten med ekonomisk och teknisk förvaltning.",
     href: "/om",
   },
   {
@@ -27,7 +27,7 @@ const summaries = [
   {
     icon: Handshake,
     title: "Arbetssätt",
-    text: "Vi börjar med nuläge och mål, bygger en plan, driver genomförandet och följer upp det som skapar värde.",
+    text: "Vi kommer överens om uppdraget, tar hand om det löpande arbetet och återkopplar om ekonomi, åtgärder och nästa steg.",
     href: "/arbetssatt",
   },
   {
@@ -73,16 +73,35 @@ export default function Home() {
         <div className="mx-auto grid max-w-[1400px] gap-8 px-6 py-12 lg:grid-cols-[1fr_2fr] lg:px-10">
           <p className="text-xs font-bold uppercase tracking-[0.2em] text-[#6f9291]">En helhet som fungerar</p>
           <p className="max-w-4xl font-display text-2xl leading-snug text-[#2d4b52] sm:text-3xl">
-            Vi tar hand om fastighetens dagliga funktion och dess långsiktiga tekniska och ekonomiska förvaltning. Tillsyn, skötsel, ekonomi, uthyrning och projekt samlas i ett tydligt ansvar.
+            Ett hus ska fungera för dem som använder det och för er som äger det. Vi håller ihop den dagliga skötseln, ekonomin och planeringen så att ni kan följa vad som händer och fatta beslut i tid.
           </p>
+        </div>
+      </section>
+
+      <section aria-labelledby="assignment-heading" className="px-6 py-20 lg:px-10 lg:py-24">
+        <div className="mx-auto max-w-[1400px]">
+          <p className="section-label">Ert uppdrag hos Stella</p>
+          <h2 id="assignment-heading" className="section-title mt-5 max-w-3xl">Ni vet vem som gör vad. Och vad som händer härnäst.</h2>
+          <div className="mt-12 grid gap-8 md:grid-cols-3">
+            {[
+              ["Ett tydligt ansvar", "Vi kommer överens om vilka delar vi tar hand om och hur kontakten ska fungera. Ni vet vem ni ska vända er till och vilka frågor som behöver ert beslut."],
+              ["Det dagliga och det långsiktiga", "Det vi ser vid tillsynen tar vi med i underhållsplaneringen. Ekonomi, uthyrning och projekt följs upp tillsammans med fastighetens löpande behov."],
+              ["Återkoppling ni kan använda", "Ni får veta vad som är gjort, vad som återstår och vilka kostnader eller behov som behöver följas upp. Vi ger underlag och föreslår hur ni kan gå vidare."],
+            ].map(([title, text]) => (
+              <article key={title} className="border-t border-[#cdd8d4] pt-7">
+                <h3 className="font-display text-2xl font-medium tracking-tight">{title}</h3>
+                <p className="mt-5 leading-7 text-[#60777d]">{text}</p>
+              </article>
+            ))}
+          </div>
         </div>
       </section>
 
       <section aria-labelledby="services-heading" className="bg-[#e8efec] px-6 py-20 lg:px-10 lg:py-28">
         <div className="mx-auto max-w-[1400px]">
           <p className="section-label">Det här hjälper vi er med</p>
-          <h2 id="services-heading" className="section-title mt-5 max-w-3xl">Fem tjänsteområden. Ett samlat ansvar.</h2>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#60777d]">Anlita oss för den löpande skötseln, ett enskilt tjänsteområde eller ett samlat uppdrag. Vi anpassar omfattningen efter er fastighet och era behov.</p>
+          <h2 id="services-heading" className="section-title mt-5 max-w-3xl">Den hjälp er fastighet behöver.</h2>
+          <p className="mt-6 max-w-2xl text-lg leading-8 text-[#60777d]">Våra fem tjänsteområden täcker vardagen i huset och den långsiktiga förvaltningen. Vi kommer tillsammans fram till vad ni vill lämna över och hur arbetet ska följas upp.</p>
           <div className="mt-12 grid auto-rows-fr gap-4 sm:grid-cols-2 xl:grid-cols-5">
             {services.map((service) => {
               const Icon = service.icon;
@@ -126,7 +145,7 @@ export default function Home() {
             <h2 className="section-title mt-5 text-white">Förvaltning där fastigheten finns.</h2>
           </div>
           <p className="text-xl leading-9 text-white/65">
-            Vi bygger upp rätt team för drift, fastighetsskötsel och förvaltning där fastigheten finns. Med lokala samarbeten, tydliga kontaktvägar och löpande uppföljning håller vi ihop det praktiska arbetet och helheten.
+            Vi organiserar uppdraget utifrån var era fastigheter ligger och vad de behöver. Med lokala samarbeten och gemensam uppföljning samordnar vi skötsel, teknik och ekonomi. Hör av er så går vi igenom förutsättningarna tillsammans.
           </p>
         </div>
       </section>

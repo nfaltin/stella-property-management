@@ -25,7 +25,7 @@ export default function ContactPage() {
           </div>
           <div className="self-end border-t border-white/20 pt-8">
             <p className="text-lg leading-8 text-white/65">
-              Ett första samtal är förutsättningslöst. Vi lyssnar in nuläget och ser var Stella kan skapa störst värde.
+              Berätta om era fastigheter och vad ni vill ha hjälp med. Det kan vara daglig skötsel, redovisning, uthyrning eller ett samlat förvaltningsuppdrag. Vi går igenom behoven tillsammans och föreslår en omfattning som passar er.
             </p>
             <a href="mailto:kontakt@stellapm.se?subject=Förfrågan%20om%20fastighetsförvaltning" className="group mt-8 inline-flex items-center gap-4 text-lg font-semibold">
               <span className="flex h-12 w-12 items-center justify-center rounded-full bg-[#9fc4c0] text-[#18343b]">

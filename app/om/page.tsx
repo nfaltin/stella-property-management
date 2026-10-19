@@ -14,18 +14,18 @@ export const metadata: Metadata = {
 const foundations = [
   {
     icon: Compass,
-    title: "Rådgivning med helhetsblick",
-    text: "Stella bygger på erfarenhet av att se fastigheten som både teknisk miljö, affär och långsiktig investering.",
+    title: "Vi ser hela uppdraget",
+    text: "Det som händer i huset påverkar både kostnaderna och människorna som använder det. Därför arbetar vi med skötsel, teknik och ekonomi i samma uppdrag.",
   },
   {
     icon: Handshake,
-    title: "Uthyrning nära marknaden",
-    text: "Vi har ett praktiskt grepp om relationen mellan fastighetsägare, hyresgäster och lokaler som ska fungera i vardagen.",
+    title: "Nära fastighetsägare och hyresgäster",
+    text: "Tydliga kontaktvägar och löpande dialog gör det lättare att fånga upp behov, hantera frågor och följa upp att arbetet blir gjort.",
   },
   {
     icon: MapPinned,
     title: "Rikstäckande arbetssätt",
-    text: "Vi arbetar över hela Sverige och bygger upp rätt team, kontaktvägar och leverans runt varje uppdrag.",
+    text: "Vi organiserar arbetet där fastigheten finns, med lokala samarbeten och en gemensam plan för ansvar och återkoppling.",
   },
 ];
 
@@ -48,11 +48,11 @@ export default function AboutPage() {
           <div>
             <p className="section-label text-[#9fc4c0]">Om Stella</p>
             <h1 className="mt-6 max-w-4xl font-display text-5xl font-medium leading-[1.04] tracking-tight sm:text-6xl lg:text-[5rem]">
-              Drift, skötsel och förvaltning med ett personligt ansvar.
+              En förvaltningspartner som håller ihop arbetet.
             </h1>
           </div>
           <p className="max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
-            Stella Property Management är byggt för fastighetsägare, investerare och bostadsrättsföreningar som vill ha tydligt ansvar, nära dialog och en partner som kan ta hand om både den dagliga skötseln, tekniken, ekonomin och uthyrningen.
+            StellaPM hjälper fastighetsägare, investerare och bostadsrättsföreningar med vardagen i fastigheten och besluten framåt. Vi utför och samordnar skötsel, teknisk och ekonomisk förvaltning, uthyrning och projekt utifrån det uppdrag vi kommer överens om.
           </p>
         </div>
       </section>
@@ -61,14 +61,14 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-[1400px] gap-12 lg:grid-cols-[.8fr_1.2fr]">
           <div>
             <p className="section-label">Vilka vi är</p>
-            <h2 className="section-title mt-5">Personligt ansvar med bred räckvidd.</h2>
+            <h2 className="section-title mt-5">Fastigheten, ekonomin och människorna.</h2>
           </div>
           <div className="space-y-7 text-lg leading-8 text-[#587078]">
             <p>
-              Bakom Stella finns ett entreprenöriellt driv och bred erfarenhet från fastighetsrådgivning, byggfrågor, teknisk förvaltning, hyresgästrelationer och uthyrning. Vi vet hur viktigt det är att någon håller ihop helheten.
+              Bakom Stella finns erfarenhet från fastighetsrådgivning, byggfrågor, teknisk förvaltning och uthyrning. Vi vet att en underhållsåtgärd, en vakant lokal och en budget hör ihop. Därför ser vi till att frågorna hanteras tillsammans.
             </p>
             <p>
-              Vår roll är att få fastigheten att fungera i vardagen och utvecklas över tid. Vi utför och samordnar drift och fastighetsskötsel, håller ordning på ekonomin och ger beslutsunderlag som går att agera på.
+              Vi börjar med att förstå era fastigheter och hur ni vill att förvaltningen ska fungera. Sedan kommer vi överens om ansvar, prioriteringar och återkoppling. Ni ska veta vad vi gör, vilka frågor som återstår och när ni behöver fatta beslut.
             </p>
           </div>
         </div>
@@ -119,7 +119,7 @@ export default function AboutPage() {
         <div className="mx-auto grid max-w-[1400px] items-center gap-12 lg:grid-cols-[1fr_auto]">
           <div>
             <p className="section-label">Nästa steg</p>
-            <h2 className="section-title mt-5">Berätta vad ni vill få bättre kontroll över.</h2>
+            <h2 className="section-title mt-5">Vad vill ni ha hjälp med i era fastigheter?</h2>
           </div>
           <Link href="/kontakt" className="inline-flex items-center justify-center gap-3 bg-[#18343b] px-7 py-4 font-semibold text-white transition hover:bg-[#2d4b52]">
             Kontakta Stella <ArrowRight size={18} />

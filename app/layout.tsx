@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Stella Property Management | Fastighetsförvaltning",
   description:
-    "StellaPM tar hand om fastighetens dagliga funktion och långsiktiga förvaltning: tillsyn och skötsel, teknik, ekonomi och redovisning, uthyrning samt projekt.",
+    "StellaPM hjälper fastighetsägare med tillsyn och skötsel, teknisk förvaltning, ekonomi och redovisning, uthyrning och projekt. Ett tydligt ansvar och löpande uppföljning.",
   icons: {
     icon: "/favicon.svg",
     shortcut: "/favicon.svg",

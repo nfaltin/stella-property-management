@@ -22,11 +22,11 @@ export default function ServicesPage() {
           <div>
             <p className="section-label text-[#9fc4c0]">Tjänster</p>
             <h1 className="mt-6 max-w-4xl font-display text-5xl font-medium leading-[1.04] tracking-tight sm:text-6xl lg:text-[5rem]">
-              Hela fastighetens behov. Fem tjänsteområden.
+              Förvaltning utifrån det ni vill lämna över.
             </h1>
           </div>
           <p className="max-w-2xl text-lg leading-8 text-white/70 sm:text-xl">
-            Vi tar hand om både fastighetens dagliga funktion och dess långsiktiga tekniska och ekonomiska förvaltning. Våra fem tjänsteområden samverkar, och uppdragets omfattning anpassas efter era behov.
+            Behöver ni hjälp med skötseln, redovisningen eller hela förvaltningen? Vi går igenom era behov och kommer överens om ansvar och uppföljning. Här ser ni vad våra fem tjänsteområden omfattar.
           </p>
         </div>
       </section>
@@ -61,13 +61,13 @@ export default function ServicesPage() {
       <section className="border-t border-[#d6dfdc] bg-white px-6 py-16 lg:px-10">
         <div className="mx-auto grid max-w-[1400px] gap-8 lg:grid-cols-2">
           <h2 className="section-title">Från iakttagelse till långsiktig plan.</h2>
-          <p className="text-lg leading-8 text-[#60777d]">Den dagliga tillsynen fångar upp brister och löpande behov. Fastighetsskötseln hanterar mindre åtgärder, medan den tekniska förvaltningen planerar och samordnar större insatser. Ekonomisk uppföljning ger underlag för prioriteringar, och projektledningen håller ihop genomförandet när det behövs.</p>
+          <p className="text-lg leading-8 text-[#60777d]">En brist som upptäcks vid tillsynen kan kräva en mindre åtgärd direkt eller behöva tas med i underhållsplanen. Den tekniska förvaltningen bedömer och samordnar behovet, ekonomin ger underlag för prioriteringen och projektledningen håller ihop större arbeten. Ni får återkoppling längs vägen.</p>
         </div>
       </section>
 
       <section className="bg-[#e8efec] px-6 py-20 lg:px-10 lg:py-24">
         <div className="mx-auto grid max-w-[1400px] items-center gap-10 lg:grid-cols-[1fr_auto]">
-          <h2 className="section-title">Vill du veta vad som passar er fastighet?</h2>
+          <h2 className="section-title">Vilka delar vill ni ha hjälp med?</h2>
           <Link href="/kontakt" className="inline-flex items-center justify-center gap-3 bg-[#18343b] px-7 py-4 font-semibold text-white transition hover:bg-[#2d4b52]">
             Kontakta Stella <ArrowRight size={18} />
           </Link>

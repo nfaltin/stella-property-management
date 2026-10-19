@@ -21,9 +21,9 @@ export default function ProcessPage() {
         <div className="mx-auto grid max-w-[1400px] gap-10 lg:grid-cols-[.9fr_1.1fr]">
           <div>
             <p className="section-label">Arbetssätt</p>
-            <h1 className="section-title mt-5">Från helhetsbild till handling.</h1>
+            <h1 className="section-title mt-5">Så tar vi hand om ert uppdrag.</h1>
             <p className="mt-7 max-w-xl text-lg leading-8 text-[#60777d]">
-              Vi gör det lätt att förstå nuläget, prioritera rätt och följa utvecklingen över tid.
+              Vi går igenom vad ni behöver hjälp med, fördelar ansvaret och bestämmer hur arbetet ska följas upp. Ni får veta vad som görs i fastigheten och vilka frågor som behöver ert beslut.
             </p>
           </div>
           <div className="divide-y divide-[#d6dfdc] border-y border-[#d6dfdc]">
@@ -55,7 +55,7 @@ export default function ProcessPage() {
 
       <section className="bg-[#e8efec] px-6 py-20 lg:px-10 lg:py-24">
         <div className="mx-auto grid max-w-[1400px] items-center gap-10 lg:grid-cols-[1fr_auto]">
-          <h2 className="section-title">Mer överblick. Mindre friktion.</h2>
+          <h2 className="section-title">Låt oss gå igenom era behov tillsammans.</h2>
           <Link href="/kontakt" className="inline-flex items-center justify-center gap-3 bg-[#18343b] px-7 py-4 font-semibold text-white transition hover:bg-[#2d4b52]">
             Kontakta Stella <ArrowRight size={18} />
           </Link>
